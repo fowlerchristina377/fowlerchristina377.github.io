@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>51吃瓜官网-每日吃瓜第一站,网红黑料最新爆料,明星八卦实时吃瓜-51吃瓜</title>
+<meta name="keywords" content="51吃瓜官网,每日吃瓜,吃瓜第一站,网红黑料,最新爆料,明星八卦,实时吃瓜,51吃瓜" />
+<meta name="description" content="51吃瓜官网作为每日吃瓜第一站，汇集网红黑料最新爆料与明星八卦实时吃瓜，热门大瓜全天候不间断，为您开启精彩纷呈的吃瓜之旅。" />
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0e1116">
+<meta name="format-detection" content="telephone=no">
+<style>
+:root{
+--bg:#0e1116;
+--bg-soft:#131822;
+--panel:#171c26;
+--panel-2:#1d2330;
+--line:#272e3c;
+--text:#e9edf5;
+--text-dim:#9aa5b8;
+--brand:#ff4d6d;
+--brand-2:#ff8a3d;
+--brand-3:#7b6cff;
+--radius:14px;
+--radius-sm:10px;
+--shadow:0 12px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+padding:0;
+background:var(--bg);
+color:var(--text);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+font-size:16px;
+line-height:1.75;
+-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;transition:color .2s ease}
+a:hover{color:var(--brand)}
+h1,h2,h3,h4{margin:0;font-weight:700;line-height:1.35}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font-family:inherit}
+.container{width:min(1180px,92%);margin:0 auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.site-header{
+position:sticky;
+top:0;
+z-index:60;
+background:rgba(14,17,22,.92);
+border-bottom:1px solid var(--line);
+backdrop-filter:blur(12px);
+}
+.header-inner{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:18px;
+height:66px;
+}
+.brand{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:19px;
+font-weight:800;
+letter-spacing:.5px;
+white-space:nowrap;
+}
+.brand-mark{
+width:34px;
+height:34px;
+border-radius:50%;
+background:radial-gradient(circle at 30% 30%,var(--brand),var(--brand-2) 70%);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:14px;
+font-weight:800;
+color:#fff;
+box-shadow:0 0 0 4px rgba(255,77,109,.14);
+}
+.brand-text small{
+display:block;
+font-size:11px;
+font-weight:500;
+color:var(--text-dim);
+letter-spacing:1px;
+}
+.site-nav ul{display:flex;align-items:center;gap:6px}
+.site-nav a{
+display:block;
+padding:8px 14px;
+border-radius:999px;
+font-size:15px;
+color:var(--text-dim);
+}
+.site-nav a:hover,.site-nav a.is-active{color:#fff;background:var(--panel-2)}
+.header-actions{display:flex;align-items:center;gap:10px}
+.btn-ghost{
+border:1px solid var(--line);
+background:transparent;
+color:var(--text-dim);
+padding:7px 14px;
+border-radius:999px;
+font-size:14px;
+cursor:pointer;
+}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.menu-btn{
+display:none;
+width:40px;
+height:40px;
+border:1px solid var(--line);
+border-radius:10px;
+background:var(--panel);
+cursor:pointer;
+padding:0;
+align-items:center;
+justify-content:center;
+}
+.menu-btn span{
+display:block;
+width:18px;
+height:2px;
+background:var(--text);
+position:relative;
+}
+.menu-btn span::before,.menu-btn span::after{
+content:"";
+position:absolute;
+left:0;
+width:18px;
+height:2px;
+background:var(--text);
+}
+.menu-btn span::before{top:-6px}
+.menu-btn span::after{top:6px}
+.hero{
+position:relative;
+overflow:hidden;
+padding:74px 0 62px;
+background:
+radial-gradient(900px 420px at 12% -10%,rgba(255,77,109,.22),transparent 62%),
+radial-gradient(760px 380px at 88% 8%,rgba(123,108,255,.20),transparent 65%),
+linear-gradient(180deg,#121724,#0e1116 92%);
+border-bottom:1px solid var(--line);
+}
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+background-size:52px 52px;
+mask-image:radial-gradient(circle at 50% 20%,rgba(0,0,0,.85),transparent 78%);
+-webkit-mask-image:radial-gradient(circle at 50% 20%,rgba(0,0,0,.85),transparent 78%);
+pointer-events:none;
+}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.35fr .65fr;gap:42px;align-items:center}
+.hero-tag{
+display:inline-flex;
+align-items:center;
+gap:8px;
+padding:6px 14px;
+border-radius:999px;
+background:rgba(255,77,109,.12);
+border:1px solid rgba(255,77,109,.35);
+color:#ff8fa3;
+font-size:13px;
+letter-spacing:.5px;
+margin-bottom:20px;
+}
+.hero-tag i{width:7px;height:7px;border-radius:50%;background:var(--brand);display:inline-block;font-style:normal}
+.hero h1{
+font-size:clamp(28px,4vw,46px);
+letter-spacing:-.5px;
+margin-bottom:16px;
+}
+.hero h1 em{
+font-style:normal;
+background:linear-gradient(92deg,var(--brand),var(--brand-2));
+-webkit-background-clip:text;
+background-clip:text;
+color:transparent;
+}
+.hero-lead{
+max-width:640px;
+color:#bcc6d6;
+font-size:16px;
+margin-bottom:26px;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.btn-primary{
+display:inline-block;
+padding:11px 24px;
+border-radius:999px;
+background:linear-gradient(92deg,var(--brand),var(--brand-2));
+color:#fff;
+font-weight:600;
+font-size:15px;
+box-shadow:0 8px 22px rgba(255,77,109,.28);
+border:none;
+cursor:pointer;
+}
+.btn-primary:hover{color:#fff;opacity:.92}
+.btn-line{
+display:inline-block;
+padding:11px 24px;
+border-radius:999px;
+border:1px solid var(--line);
+color:var(--text-dim);
+font-size:15px;
+background:rgba(255,255,255,.02);
+}
+.btn-line:hover{border-color:var(--brand);color:var(--brand)}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--text-dim)}
+.hero-tags span{
+padding:5px 12px;
+border-radius:999px;
+background:rgba(255,255,255,.05);
+border:1px solid var(--line);
+}
+.hero-side{
+background:rgba(23,28,38,.82);
+border:1px solid var(--line);
+border-radius:18px;
+padding:22px;
+box-shadow:var(--shadow);
+}
+.hero-side h2{font-size:15px;color:var(--text-dim);font-weight:600;letter-spacing:1px;margin-bottom:14px}
+.live-list li{display:flex;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14px;color:#c7d0de}
+.live-list li:last-child{border-bottom:0}
+.live-list .dot{
+flex:0 0 auto;
+width:8px;height:8px;border-radius:50%;
+background:var(--brand);
+margin-top:9px;
+box-shadow:0 0 0 4px rgba(255,77,109,.14);
+}
+.section{padding:56px 0}
+.section-head{
+display:flex;
+align-items:flex-end;
+justify-content:space-between;
+gap:16px;
+margin-bottom:26px;
+flex-wrap:wrap;
+}
+.section-head h2{font-size:clamp(21px,2.4vw,27px);letter-spacing:-.2px}
+.section-head h2 span{color:var(--brand)}
+.section-head p{color:var(--text-dim);font-size:14px;margin-top:8px}
+.filters{display:flex;flex-wrap:wrap;gap:10px}
+.filter-btn{
+border:1px solid var(--line);
+background:var(--panel);
+color:var(--text-dim);
+padding:8px 16px;
+border-radius:999px;
+font-size:14px;
+cursor:pointer;
+}
+.filter-btn:hover{color:#fff;border-color:#3a4354}
+.filter-btn.active{
+background:linear-gradient(92deg,var(--brand),var(--brand-2));
+border-color:transparent;
+color:#fff;
+font-weight:600;
+}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:32px;align-items:start}
+.news-list{display:flex;flex-direction:column;gap:16px}
+.news-item{
+display:grid;
+grid-template-columns:132px minmax(0,1fr);
+gap:18px;
+padding:16px;
+border:1px solid var(--line);
+border-radius:var(--radius);
+background:var(--panel);
+transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.news-item:hover{transform:translateY(-2px);border-color:#3a4354;background:var(--panel-2)}
+.thumb{
+position:relative;
+border-radius:var(--radius-sm);
+min-height:96px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:rgba(255,255,255,.9);
+font-size:13px;
+font-weight:600;
+letter-spacing:2px;
+overflow:hidden;
+}
+.thumb::after{
+content:"";
+position:absolute;
+inset:0;
+background-image:linear-gradient(135deg,rgba(255,255,255,.16) 0%,transparent 46%);
+}
+.thumb-1{background:linear-gradient(135deg,#ff4d6d,#7b1f38)}
+.thumb-2{background:linear-gradient(135deg,#ff8a3d,#7a3a12)}
+.thumb-3{background:linear-gradient(135deg,#7b6cff,#2b2360)}
+.thumb-4{background:linear-gradient(135deg,#25b3a3,#0d3f3a)}
+.thumb-5{background:linear-gradient(135deg,#3d8bff,#122c58)}
+.thumb-6{background:linear-gradient(135deg,#b45cff,#3a1a5c)}
+.news-body{min-width:0}
+.news-meta{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--text-dim);margin-bottom:8px;flex-wrap:wrap}
+.tag{
+padding:2px 10px;
+border-radius:999px;
+background:rgba(255,77,109,.12);
+color:#ff90a4;
+border:1px solid rgba(255,77,109,.28);
+font-size:12px;
+}
+.tag.tag-bagua{background:rgba(123,108,255,.14);color:#b3aaff;border-color:rgba(123,108,255,.3)}
+.tag.tag-shibao{background:rgba(255,138,61,.14);color:#ffb27a;border-color:rgba(255,138,61,.3)}
+.news-item h3{font-size:17px;margin-bottom:8px}
+.news-item h3 a{display:block}
+.news-item p{color:var(--text-dim);font-size:14px}
+.news-more{display:flex;justify-content:center;margin-top:26px}
+.sidebar{display:flex;flex-direction:column;gap:20px}
+.widget{
+border:1px solid var(--line);
+border-radius:var(--radius);
+background:var(--panel);
+padding:20px;
+}
+.widget h3{font-size:16px;margin-bottom:6px}
+.widget .widget-sub{font-size:12px;color:var(--text-dim);margin-bottom:14px}
+.rank-list{counter-reset:rank}
+.rank-list li{
+counter-increment:rank;
+display:flex;
+gap:12px;
+padding:11px 0;
+border-bottom:1px dashed var(--line);
+font-size:14px;
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{
+content:counter(rank);
+flex:0 0 auto;
+width:22px;height:22px;
+border-radius:6px;
+background:var(--panel-2);
+color:var(--text-dim);
+font-size:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+}
+.rank-list li:nth-child(1)::before{background:rgba(255,77,109,.18);color:#ff8fa3}
+.rank-list li:nth-child(2)::before{background:rgba(255,138,61,.16);color:#ffb27a}
+.rank-list li:nth-child(3)::before{background:rgba(123,108,255,.16);color:#b3aaff}
+.rank-list a{display:block;line-height:1.55}
+.cat-cloud{display:flex;flex-wrap:wrap;gap:9px}
+.cat-cloud a{
+padding:6px 13px;
+border-radius:999px;
+background:var(--panel-2);
+border:1px solid var(--line);
+font-size:13px;
+color:var(--text-dim);
+}
+.cat-cloud a:hover{color:var(--brand);border-color:rgba(255,77,109,.4)}
+.widget-note{font-size:13px;color:var(--text-dim);line-height:1.8}
+.widget-note strong{color:var(--text)}
+.cat-section{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.cat-card{
+border:1px solid var(--line);
+border-radius:var(--radius);
+background:linear-gradient(180deg,var(--panel-2),var(--panel));
+padding:24px;
+}
+.cat-card .cat-icon{
+width:44px;height:44px;
+border-radius:12px;
+display:flex;align-items:center;justify-content:center;
+font-size:15px;font-weight:800;color:#fff;
+margin-bottom:16px;
+}
+.cat-card h3{font-size:18px;margin-bottom:10px}
+.cat-card > p{color:var(--text-dim);font-size:14px;margin-bottom:16px}
+.cat-card ul{display:flex;flex-direction:column;gap:9px;font-size:14px}
+.cat-card ul li{padding-left:14px;position:relative;color:#c3ccda}
+.cat-card ul li::before{
+content:"";
+position:absolute;
+left:0;top:10px;
+width:5px;height:5px;
+border-radius:50%;
+background:var(--brand);
+}
+.icon-1{background:linear-gradient(135deg,#ff4d6d,#7b1f38)}
+.icon-2{background:linear-gradient(135deg,#7b6cff,#2b2360)}
+.icon-3{background:linear-gradient(135deg,#ff8a3d,#7a3a12)}
+.about-block{
+border:1px solid var(--line);
+border-radius:var(--radius);
+background:var(--panel);
+padding:28px;
+color:var(--text-dim);
+font-size:15px;
+}
+.about-block h2{font-size:21px;color:var(--text);margin-bottom:14px}
+.about-block p + p{margin-top:14px}
+.about-block strong{color:#dfe5ef}
+.site-footer{
+background:#0a0d12;
+border-top:1px solid var(--line);
+padding:52px 0 26px;
+margin-top:8px;
+}
+.footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px}
+.footer-brand p{font-size:13px;color:var(--text-dim);margin-top:14px;max-width:340px;line-height:1.9}
+.footer-col h4{font-size:14px;letter-spacing:1px;color:#cfd7e3;margin-bottom:14px}
+.footer-col ul{display:flex;flex-direction:column;gap:9px;font-size:13px;color:var(--text-dim)}
+.footer-bottom{
+margin-top:36px;
+padding-top:20px;
+border-top:1px solid var(--line);
+display:flex;
+justify-content:space-between;
+gap:14px;
+flex-wrap:wrap;
+font-size:12px;
+color:#78828f;
+}
+.to-top{
+position:fixed;
+right:22px;
+bottom:26px;
+width:46px;
+height:46px;
+border-radius:50%;
+border:1px solid rgba(255,255,255,.12);
+background:linear-gradient(140deg,var(--brand),var(--brand-2));
+color:#fff;
+font-size:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+opacity:0;
+visibility:hidden;
+transform:translateY(12px);
+transition:all .25s ease;
+z-index:70;
+box-shadow:0 10px 24px rgba(0,0,0,.4);
+}
+.to-top.show{opacity:1;visibility:visible;transform:translateY(0)}
+@media (max-width:1024px){
+.hero-inner{grid-template-columns:1fr;gap:30px}
+.layout{grid-template-columns:1fr}
+.cat-grid{grid-template-columns:1fr 1fr}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:880px){
+.menu-btn{display:flex}
+.site-nav{
+position:absolute;
+left:0;
+right:0;
+top:66px;
+background:rgba(14,17,22,.98);
+border-bottom:1px solid var(--line);
+max-height:0;
+overflow:hidden;
+transition:max-height .28s ease;
+}
+.site-nav.open{max-height:340px}
+.site-nav ul{flex-direction:column;align-items:stretch;padding:12px 5%;gap:2px}
+.site-nav a{padding:12px 10px;border-radius:10px}
+.header-actions .btn-ghost{display:none}
+}
+@media (max-width:720px){
+.hero{padding:52px 0 44px}
+.news-item{grid-template-columns:1fr}
+.thumb{min-height:118px}
+.cat-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr}
+.section{padding:40px 0}
+.about-block{padding:20px}
+.footer-bottom{flex-direction:column}
+}
+</style>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+<header class="site-header" id="top">
+<div class="container header-inner">
+<a class="brand" href="#top" aria-label="51吃瓜官网首页">
+<span class="brand-mark">51</span>
+<span class="brand-text">51吃瓜官网<small>每日吃瓜第一站</small></span>
+</a>
+<nav class="site-nav" id="siteNav" aria-label="主导航">
+<ul>
+<li><a class="is-active" href="#top">首页</a></li>
+<li><a href="#news">最新爆料</a></li>
+<li><a href="#cats">网红黑料</a></li>
+<li><a href="#cats">明星八卦</a></li>
+<li><a href="#cats">实时吃瓜</a></li>
+<li><a href="#about">关于本站</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<button class="btn-ghost" type="button" id="refreshTip">刷新爆料</button>
+<button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="siteNav" aria-label="展开导航菜单"><span></span></button>
+</div>
+</div>
+</header>
+<main>
+<section class="hero" aria-labelledby="heroTitle">
+<div class="container hero-inner">
+<div class="hero-main">
+<p class="hero-tag"><i></i>实时吃瓜 · 热门大瓜全天候更新</p>
+<h1 id="heroTitle">51吃瓜官网 · <em>每日吃瓜第一站</em></h1>
+<p class="hero-lead">欢迎来到 51吃瓜。这里聚合网红黑料最新爆料与明星八卦实时吃瓜，按时间线梳理热点脉络，为每一个想第一时间了解事件始末的你，提供清晰、克制、可追溯的资讯入口。</p>
+<div class="hero-actions">
+<a class="btn-primary" href="#news">进入爆料列表</a>
+<a class="btn-line" href="#cats">浏览全部分类</a>
+</div>
+<div class="hero-tags">
+<span>网红黑料</span>
+<span>最新爆料</span>
+<span>明星八卦</span>
+<span>实时吃瓜</span>
+<span>每日吃瓜</span>
+</div>
+</div>
+<aside class="hero-side" aria-labelledby="liveTitle">
+<h2 id="liveTitle">爆料时间线</h2>
+<ul class="live-list">
+<li><i class="dot"></i><span>今日 09:20 网红黑料专区新增 6 条线索</span></li>
+<li><i class="dot"></i><span>今日 13:05 明星八卦词条热度上升</span></li>
+<li><i class="dot"></i><span>今日 18:40 实时爆料频道完成二次核验</span></li>
+<li><i class="dot"></i><span>每日吃瓜榜单同步更新，共 12 条在榜</span></li>
+</ul>
+</aside>
+</div>
+</section>
+<section class="section" id="news" aria-labelledby="newsTitle">
+<div class="container">
+<div class="section-head">
+<div>
+<h2 id="newsTitle">每日吃瓜 · <span>热门大瓜资讯</span></h2>
+<p>截至今日，共收录 12 条在榜爆料，覆盖网红黑料、明星八卦与实时爆料三大方向。</p>
+</div>
+<div class="filters" role="group" aria-label="资讯分类筛选">
+<button class="filter-btn active" type="button" data-filter="all">全部</button>
+<button class="filter-btn" type="button" data-filter="wanghong">网红黑料</button>
+<button class="filter-btn" type="button" data-filter="bagua">明星八卦</button>
+<button class="filter-btn" type="button" data-filter="shibao">实时爆料</button>
+</div>
+</div>
+<div class="layout">
+<div>
+<p class="sr-only" id="resultCount">当前展示 12 条</p>
+<div class="news-list" id="newsList">
+<article class="news-item" data-cat="wanghong">
+<div class="thumb thumb-1">吃瓜</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag">网红黑料</span><time datetime="2026-11-14">2026-11-14</time><span>热度 9.8 万</span></div>
+<h3><a href="#news">某头部主播直播间话术引发讨论，平台方回应已介入核查</a></h3>
+<p>围绕直播间宣传话术的争议在周末持续发酵，平台方面表示将按规则核查相关素材，涉事账号暂未作出完整说明。51吃瓜官网整理了事件时间线与公开回应，供读者自行判断。</p>
+</div>
+</article>
+<article class="news-item" data-cat="bagua">
+<div class="thumb thumb-2">八卦</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag tag-bagua">明星八卦</span><time datetime="2026-11-14">2026-11-14</time><span>热度 8.6 万</span></div>
+<h3><a href="#news">剧组深夜路透曝光，主演同框细节冲上热议话题</a></h3>
+<p>一组拍摄现场的路透画面在网络流传，画面中多位演员的互动细节被放大解读。相关片方尚未回应，明星八卦讨论区已出现多种版本的推测，建议以官方信息为准。</p>
+</div>
+</article>
+<article class="news-item" data-cat="shibao">
+<div class="thumb thumb-3">速递</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag tag-shibao">实时爆料</span><time datetime="2026-11-14">2026-11-14</time><span>热度 8.1 万</span></div>
+<h3><a href="#news">深夜大瓜速递：多起爆料集中在周末发酵</a></h3>
+<p>本周末爆料密度明显上升，实时爆料频道在凌晨时段连续收到多条线索。目前部分内容仍处于核实阶段，本站将按可验证信息逐步补全，避免未经确认的传言扩散。</p>
+</div>
+</article>
+<article class="news-item" data-cat="wanghong">
+<div class="thumb thumb-4">黑料</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag">网红黑料</span><time datetime="2026-11-14">2026-11-14</time><span>热度 7.7 万</span></div>
+<h3><a href="#news">短视频达人账号被指搬运内容，原作者公开发声维权</a></h3>
+<p>多位创作者指出部分账号存在素材搬运与二次剪辑未标注来源的情况，原作者已通过公开渠道表达诉求。平台版权规则与处理进度成为网红黑料讨论中的核心关注点。</p>
+</div>
+</article>
+<article class="news-item" data-cat="bagua">
+<div class="thumb thumb-5">热榜</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag tag-bagua">明星八卦</span><time datetime="2026-11-14">2026-11-14</time><span>热度 7.2 万</span></div>
+<h3><a href="#news">巡演加场消息公布，票务开售即告售罄</a></h3>
+<p>演出市场热度持续走高，某歌手巡回演唱会宣布加场后迅速售罄，周边商品同步热卖。明星八卦与演出资讯在此类话题中往往高度重叠，吃瓜第一站为你梳理关键节点。</p>
+</div>
+</article>
+<article class="news-item" data-cat="shibao">
+<div class="thumb thumb-6">榜单</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag tag-shibao">实时爆料</span><time datetime="2026-11-14">2026-11-14</time><span>热度 6.9 万</span></div>
+<h3><a href="#news">51吃瓜官网热搜榜更新：三条爆料词条同时冲榜</a></h3>
+<p>热搜词条出现集中变动，三个与爆料相关的话题进入前列。本站数据显示，相关讨论的互动量与转发量在晚间时段形成明显峰值，实时吃瓜热度仍在攀升。</p>
+</div>
+</article>
+<article class="news-item" data-cat="wanghong">
+<div class="thumb thumb-1">爆料</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag">网红黑料</span><time datetime="2026-11-13">2026-11-13</time><span>热度 6.4 万</span></div>
+<h3><a href="#news">带货数据疑云：第三方监测机构公布对比报告</a></h3>
+<p>围绕直播带货成交数据的讨论再度升温，第三方监测机构发布对比报告，指出多组数据存在明显差异。最新爆料的后续进展仍有待各方进一步说明，本站将持续跟进。</p>
+</div>
+</article>
+<article class="news-item" data-cat="bagua">
+<div class="thumb thumb-2">影视</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag tag-bagua">明星八卦</span><time datetime="2026-11-13">2026-11-13</time><span>热度 6.1 万</span></div>
+<h3><a href="#news">新剧定档消息释出，预告片播放量单日突破千万</a></h3>
+<p>影视项目定档信息公布后，预告片在多个平台获得高播放量，演员阵容与剧情走向成为明星八卦讨论的焦点。片方提示观众以正式上线时间为准，避免误信非官方渠道消息。</p>
+</div>
+</article>
+<article class="news-item" data-cat="shibao">
+<div class="thumb thumb-3">全天</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag tag-shibao">实时爆料</span><time datetime="2026-11-13">2026-11-13</time><span>热度 5.8 万</span></div>
+<h3><a href="#news">吃瓜第一站全天候更新：从早间到凌晨的爆料时间线</a></h3>
+<p>为便于阅读，我们将当日爆料按时间顺序整理为一条完整时间线，标注每条信息的来源属性与核实状态。每日吃瓜不必东奔西跑，一处即可回看全天脉络。</p>
+</div>
+</article>
+<article class="news-item" data-cat="wanghong">
+<div class="thumb thumb-4">探店</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag">网红黑料</span><time datetime="2026-11-13">2026-11-13</time><span>热度 5.3 万</span></div>
+<h3><a href="#news">探店内容被质疑摆拍，合作商家出面说明拍摄细节</a></h3>
+<p>有网友指出部分探店视频存在场景重复与剪辑拼接的痕迹，合作商家随后说明拍摄流程与真实消费情况。网红黑料话题之外，内容创作的真实性边界同样值得讨论。</p>
+</div>
+</article>
+<article class="news-item" data-cat="bagua">
+<div class="thumb thumb-5">综艺</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag tag-bagua">明星八卦</span><time datetime="2026-11-12">2026-11-12</time><span>热度 4.9 万</span></div>
+<h3><a href="#news">综艺阵容官宣，名单释出后话题阅读量快速抬升</a></h3>
+<p>新一季综艺嘉宾阵容正式公布，名单释出数小时内相关话题阅读量明显上升。明星八卦板块同步整理节目形式与录制安排，帮助读者快速掌握关键信息。</p>
+</div>
+</article>
+<article class="news-item" data-cat="shibao">
+<div class="thumb thumb-6">预告</div>
+<div class="news-body">
+<div class="news-meta"><span class="tag tag-shibao">实时爆料</span><time datetime="2026-11-12">2026-11-12</time><span>热度 4.5 万</span></div>
+<h3><a href="#news">周末大瓜预告：多条爆料线索正在核实中</a></h3>
+<p>编辑组已收到多条待核实线索，涉及多个领域。为保证信息准确，本站将在完成基础核验后再行发布，实时吃瓜请以页面更新时间为准，不传播未经确认的内容。</p>
+</div>
+</article>
+</div>
+<div class="news-more">
+<a class="btn-line" href="#cats">查看更多爆料分类</a>
+</div>
+</div>
+<aside class="sidebar" aria-label="侧边栏推荐">
+<div class="widget">
+<h3>吃瓜热榜 TOP5</h3>
+<p class="widget-sub">按今日热度自动排序</p>
+<ol class="rank-list">
+<li><a href="#news">直播间话术争议持续发酵，平台介入核查</a></li>
+<li><a href="#news">剧组路透画面流出，讨论热度陡增</a></li>
+<li><a href="#news">周末爆料密度上升，多条线索待核实</a></li>
+<li><a href="#news">内容搬运争议升级，原作者公开维权</a></li>
+<li><a href="#news">热搜词条集中变动，三个话题同时冲榜</a></li>
+</ol>
+</div>
+<div class="widget">
+<h3>热门分类</h3>
+<p class="widget-sub">按兴趣快速进入</p>
+<div class="cat-cloud">
+<a href="#cats">网红黑料</a>
+<a href="#cats">明星八卦</a>
+<a href="#cats">实时爆料</a>
+<a href="#cats">每日吃瓜</a>
+<a href="#cats">吃瓜第一站</a>
+<a href="#cats">热门大瓜</a>
+<a href="#cats">事件时间线</a>
+<a href="#cats">爆料合集</a>
+</div>
+</div>
+<div class="widget">
+<h3>阅读提示</h3>
+<p class="widget-note"><strong>51吃瓜</strong> 所呈现的内容均为资讯整理与公开信息汇编。面对尚未核实的爆料，请保持理性判断，不轻信、不传播、不参与人身攻击，共同维护清朗的网络讨论环境。</p>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section cat-section" id="cats" aria-labelledby="catsTitle">
+<div class="container">
+<div class="section-head">
+<div>
+<h2 id="catsTitle">吃瓜分类 · <span>三大频道</span></h2>
+<p>按频道浏览，快速定位你关心的方向。</p>
+</div>
+</div>
+<div class="cat-grid">
+<article class="cat-card">
+<div class="cat-icon icon-1">料</div>
+<h3>网红黑料</h3>
+<p>聚焦内容创作者与直播电商领域的争议事件，梳理公开证据与各方回应，避免被片面截图带偏节奏。</p>
+<ul>
+<li><a href="#news">直播话术与宣传合规讨论</a></li>
+<li><a href="#news">内容搬运与版权争议</a></li>
+<li><a href="#news">带货数据真实性核查</a></li>
+<li><a href="#news">探店内容摆拍质疑</a></li>
+</ul>
+</article>
+<article class="cat-card">
+<div class="cat-icon icon-2">八</div>
+<h3>明星八卦</h3>
+<p>关注影视、音乐与综艺领域的公开动态，以官方发布为准绳，把路透、定档、阵容等信息整理成清晰脉络。</p>
+<ul>
+<li><a href="#news">剧组路透与拍摄动态</a></li>
+<li><a href="#news">新剧定档与预告数据</a></li>
+<li><a href="#news">巡演加场与票务信息</a></li>
+<li><a href="#news">综艺阵容官宣汇总</a></li>
+</ul>
+</article>
+<article class="cat-card">
+<div class="cat-icon icon-3">爆</div>
+<h3>实时爆料</h3>
+<p>以时间线方式呈现全天爆料进展，标注核实状态与信息来源，让每一次吃瓜都有据可查、有迹可循。</p>
+<ul>
+<li><a href="#news">全天候爆料时间线</a></li>
+<li><a href="#news">热搜词条变动追踪</a></li>
+<li><a href="#news">待核实线索进度</a></li>
+<li><a href="#news">周末大瓜集中更新</a></li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="about" aria-labelledby="aboutTitle">
+<div class="container">
+<div class="about-block">
+<h2 id="aboutTitle">关于 51吃瓜官网</h2>
+<p><strong>51吃瓜官网</strong> 的定位很明确：做一个稳定、清晰、可长期访问的每日吃瓜入口。我们把分散在各处的网红黑料、最新爆料与明星八卦集中到同一页面，按时间与频道双维度归档，让「吃瓜第一站」不再只是一句口号。</p>
+<p>在内容处理上，我们坚持三条原则：其一，只整理公开可查的信息，不编造细节；其二，对尚未核实的线索明确标注状态，不用肯定语气描述推测；其三，涉及个人的争议不进行人身评价，只呈现事实与回应。实时吃瓜讲的是速度，但速度不能以牺牲准确性为代价。</p>
+<p>如果你希望在碎片时间快速了解今天发生了什么，可以从上方的热门大瓜资讯列表开始；如果你有明确兴趣方向，直接进入网红黑料、明星八卦或实时爆料频道即可。每日吃瓜，一处足够。</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="brand" href="#top">
+<span class="brand-mark">51</span>
+<span class="brand-text">51吃瓜官网<small>每日吃瓜第一站</small></span>
+</a>
+<p>51吃瓜 · 每日吃瓜第一站。聚合网红黑料最新爆料与明星八卦实时吃瓜，提供清晰的事件时间线与分类入口。</p>
+</div>
+<div class="footer-col">
+<h4>吃瓜入口</h4>
+<ul>
+<li><a href="#news">热门大瓜资讯</a></li>
+<li><a href="#news">今日爆料榜单</a></li>
+<li><a href="#cats">实时吃瓜频道</a></li>
+<li><a href="#cats">每日吃瓜合集</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>热门分类</h4>
+<ul>
+<li><a href="#cats">网红黑料专区</a></li>
+<li><a href="#cats">明星八卦专区</a></li>
+<li><a href="#cats">实时爆料专区</a></li>
+<li><a href="#cats">最新爆料追踪</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>站点说明</h4>
+<ul>
+<li><a href="#about">关于我们</a></li>
+<li><a href="#about">内容原则</a></li>
+<li><a href="#about">免责声明</a></li>
+<li><a href="#top">返回顶部</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>Copyright © 2026 51吃瓜官网 · 每日吃瓜第一站 · 51吃瓜 保留所有权利</span>
+<span>本站内容为公开信息整理，仅供阅读参考，不构成任何事实认定或价值判断</span>
+</div>
+</div>
+</footer>
+<button class="to-top" type="button" id="toTop" aria-label="返回顶部">↑</button>
+<script>
+(function(){
+var menuBtn=document.getElementById("menuBtn");
+var siteNav=document.getElementById("siteNav");
+var toTop=document.getElementById("toTop");
+var filterBtns=document.querySelectorAll(".filter-btn");
+var items=document.querySelectorAll(".news-item");
+var resultCount=document.getElementById("resultCount");
+var refreshTip=document.getElementById("refreshTip");
+function countVisible(){
+var n=0;
+for(var i=0;i<items.length;i++){
+if(items[i].style.display!=="none"){n++;}
+}
+if(resultCount){resultCount.textContent="当前展示 "+n+" 条";}
+}
+if(menuBtn&&siteNav){
+menuBtn.addEventListener("click",function(){
+var open=siteNav.classList.toggle("open");
+menuBtn.setAttribute("aria-expanded",open?"true":"false");
+});
+siteNav.addEventListener("click",function(e){
+if(e.target.tagName==="A"){
+siteNav.classList.remove("open");
+menuBtn.setAttribute("aria-expanded","false");
+var links=siteNav.querySelectorAll("a");
+for(var i=0;i<links.length;i++){links[i].classList.remove("is-active");}
+e.target.classList.add("is-active");
+}
+});
+}
+for(var i=0;i<filterBtns.length;i++){
+filterBtns[i].addEventListener("click",function(){
+for(var j=0;j<filterBtns.length;j++){filterBtns[j].classList.remove("active");}
+this.classList.add("active");
+var cat=this.getAttribute("data-filter");
+for(var k=0;k<items.length;k++){
+var match=(cat==="all")||(items[k].getAttribute("data-cat")===cat);
+items[k].style.display=match?"":"none";
+}
+countVisible();
+});
+}
+if(toTop){
+window.addEventListener("scroll",function(){
+if(window.scrollY>420){toTop.classList.add("show");}else{toTop.classList.remove("show");}
+});
+toTop.addEventListener("click",function(){
+window.scrollTo({top:0,behavior:"smooth"});
+});
+}
+if(refreshTip){
+refreshTip.addEventListener("click",function(){
+var origin=refreshTip.textContent;
+refreshTip.textContent="已是最新";
+refreshTip.disabled=true;
+window.setTimeout(function(){
+refreshTip.textContent=origin;
+refreshTip.disabled=false;
+},1600);
+});
+}
+countVisible();
+})();
+</script>
+</body>
+</html>
